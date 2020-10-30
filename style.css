@@ -1,0 +1,27 @@
+header {
+	height: 100vh;
+}
+
+.flex_header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@keyframes blink {
+	50% {border-color: #fff;}
+}
+
+.name {
+	font-family: 'Syne Mono', monospace;
+	display: inline-block;
+	height: 40px;
+	border-right: 2px solid #000;
+	animation: blink .5s step-end infinite alternate;
+}
+
+.subtext {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
